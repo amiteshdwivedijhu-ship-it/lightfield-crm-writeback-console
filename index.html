@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Synthetic demo of a Lightfield meeting capture review: transcript cited CRM activity, a never invent deal stage gate, and human Log, Hold, or Escalate actions. No real data, no accounts.">
+<title>Lightfield · Meeting to CRM Activity Review (Synthetic Demo)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#case-grid">Skip to meeting loader</a>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-name">Lightfield</span>
+    <span class="brand-sub">Capture review</span>
+  </div>
+  <span class="demo-badge" title="Synthetic demo only">Synthetic demo</span>
+</header>
+
+<main class="shell">
+  <header class="hero">
+    <p class="eyebrow">Agents pod · writeback review</p>
+    <h1>Meeting → CRM activity review</h1>
+    <p class="tagline">Lightfield captured a call into the context graph and drafted CRM activity with transcript citations. Nothing writes back until a human logs it, and no agent can invent a deal stage.</p>
+  </header>
+
+  <section class="picker card" aria-labelledby="picker-title">
+    <h2 id="picker-title">1. Load a meeting capture</h2>
+    <div id="case-grid" class="case-grid"></div>
+  </section>
+
+  <section id="console" class="hidden" aria-labelledby="meeting-title">
+    <div id="meeting-card"></div>
+    <div id="transcript-block"></div>
+    <div id="activity-block"></div>
+    <div id="gate-block"></div>
+    <div id="impact-block" class="hidden"></div>
+  </section>
+</main>
+
+<footer class="shell">
+  <p>Unofficial synthetic prototype. Fictional companies and transcripts, no Lightfield login, no CRM writes outside this browser. The stage gate enforces the attribute definition: deal stage changes need cited customer commitment, and Closed Won needs a signed contract.</p>
+  <button id="reset" class="button button-quiet" type="button">Reset demo</button>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<div id="live-region" class="visually-hidden" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
